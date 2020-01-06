@@ -63,6 +63,26 @@ mixin _$IMCStore on _IMCStore, Store {
   final _$_IMCStoreActionController = ActionController(name: '_IMCStore');
 
   @override
+  void setHeight(String value) {
+    final _$actionInfo = _$_IMCStoreActionController.startAction();
+    try {
+      return super.setHeight(value);
+    } finally {
+      _$_IMCStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void setWeight(String value) {
+    final _$actionInfo = _$_IMCStoreActionController.startAction();
+    try {
+      return super.setWeight(value);
+    } finally {
+      _$_IMCStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void calcImc() {
     final _$actionInfo = _$_IMCStoreActionController.startAction();
     try {

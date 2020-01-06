@@ -15,6 +15,16 @@ abstract class _IMCStore with Store{
   String result = '';
 
   @action
+  void setHeight(String value){
+    height = value;
+  }
+
+  @action
+  void setWeight(String value){
+    weight = value;
+  }
+
+  @action
   void calcImc(){
    var bmi = int.parse(weight) / (double.parse(height) * double.parse(height)/10000);
 

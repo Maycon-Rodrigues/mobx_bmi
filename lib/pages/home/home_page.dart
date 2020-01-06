@@ -16,9 +16,9 @@ class HomeScreen extends StatelessWidget {
         title: Text(
           'Calculo de IMC',
           style: TextStyle(
-            color: Colors.pink,
+            color: Theme.of(context).primaryColor,
             fontWeight: FontWeight.bold,
-            fontSize: 22,
+            fontSize: 28,
           ),
         ),
       ),
@@ -40,15 +40,16 @@ class HomeScreen extends StatelessWidget {
                     labelText: 'Altura (cm)',
                     labelStyle: TextStyle(fontSize: 20),
                   ),
-                  onChanged: (value) => store.height = value),
+                  onChanged: (value) => store.setHeight(value)),
               TextField(
                   maxLength: 3,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    labelText: 'Peso (cm)',
+                    labelText: 'Peso (kg)',
                     labelStyle: TextStyle(fontSize: 20),
                   ),
-                  onChanged: (value) => store.weight = value),
+                  onChanged: (value) => store.setWeight(value),
+              ),
               SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
