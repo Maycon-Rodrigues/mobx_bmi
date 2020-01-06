@@ -1,6 +1,6 @@
 # Flutter Mobx BMI
 
-For study purposes i experimented with state management with mobx, so i decided to create this little app.
+I'm studying mobx as a state manager and decided to create this app for study purposes.
 
 <p float="left">
   <img src="https://github.com/Maycon-Rodrigues/mobx_bmi/blob/master/screen1.png" width="300"/>
